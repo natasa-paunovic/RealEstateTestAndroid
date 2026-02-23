@@ -10,20 +10,16 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.collectAsState
-import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.testTag
 import androidx.paging.LoadState
 import androidx.paging.compose.LazyPagingItems
-import androidx.paging.compose.collectAsLazyPagingItems
 import com.android.realestatete.domain.model.Property
 import com.android.realestatete.presentation.ui.components.PropertyList
-import com.android.realestatete.presentation.viewmodel.PropertyViewModel
 import com.android.realestatete.presentation.ui.theme.AccentTeal
 import com.android.realestatete.presentation.ui.theme.BackgroundColor
-import org.koin.androidx.compose.koinViewModel
+
 
 @Composable
 fun PropertyScreen(

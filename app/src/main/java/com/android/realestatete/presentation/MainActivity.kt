@@ -19,9 +19,10 @@ class MainActivity : ComponentActivity() {
      //   enableEdgeToEdge()
         setContent {
             RealEstateTestAndroidTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    PropertyScreenRoute()
-                }
+//                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+//                    PropertyScreenRoute()
+//                }
+                PropertyScreenRoute()
             }
         }
     }

@@ -180,11 +180,6 @@ class PropertyPagingSourceTest {
     @Test
     fun `refresh key calculation works`() {
 
-        val state = mockk<PagingState<Int, Property>>()
-
-        val page = mockk<PagingSource.LoadResult.Page<Int, Property>>()
-
-        // Simpler approach — test refreshKey logic indirectly
         val refreshKey = pagingSource.getRefreshKey(
             PagingState(
                 pages = emptyList(),

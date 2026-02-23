@@ -9,7 +9,6 @@ import com.android.realestatete.presentation.viewmodel.PropertyViewModel
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.mockk
-import io.mockk.verify
 import junit.framework.TestCase.assertNotNull
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -61,8 +60,6 @@ class PropertyViewModelTest {
     @Test
     fun `toggleLike calls preference`() = runTest {
 
-        fun `toggleLike calls preference`() = runTest {
-
             coEvery {
                 repository.getProperties()
             } returns flowOf(PagingData.empty())
@@ -87,7 +84,7 @@ class PropertyViewModelTest {
             coVerify(exactly = 1) {
                 preferences.toggleLikedProperty("1")
             }
-        }
+
     }
 
 }
