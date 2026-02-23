@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RealEstateTestAndroid</string>
+    <string name="load_more_failed_tap_to_retry">Load more failed. Tap to retry.</string>
+</resources>
