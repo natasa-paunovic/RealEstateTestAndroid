@@ -33,6 +33,7 @@ fun PropertyScreen(
 
     Box(
         modifier = Modifier
+            .padding(WindowInsets.statusBars.asPaddingValues())
             .fillMaxSize()
             .background(BackgroundColor)
     ) {
